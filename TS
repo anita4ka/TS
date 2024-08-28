@@ -86,3 +86,4 @@ SuperUserReadonly.email = abrakadabra@mail.ru;
 
 /*Record: Создайте тип UserRecord как Record<string, User>, в котором ключ - это идентификатор пользователя, а значение - объект User. Используйте этот тип для создания коллекции пользователей.
 */
+type SuperUserRecord = Record<string, SuperUser>
