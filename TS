@@ -1,0 +1,11 @@
+/*Создайте тип Status с возможными значениями: "pending", "in-progress", "completed".
+* Создайте тип User с полями: name: string, age: number, status: Status.
+* Создайте функцию updateStatus, которая принимает объект User и новый status: Status и возвращает обновленный объект User
+*/
+type Status = "pending" | "in-progress" | "completed";
+type User = {
+    name: string;
+     age: number;
+     status: Status;
+}
+
