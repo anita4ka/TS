@@ -86,4 +86,11 @@ SuperUserReadonly.email = abrakadabra@mail.ru;
 
 /*Record: Создайте тип UserRecord как Record<string, User>, в котором ключ - это идентификатор пользователя, а значение - объект User. Используйте этот тип для создания коллекции пользователей.
 */
-type SuperUserRecord = Record<string, SuperUser>
+type SuperUserRecord = Record<string, SuperUser>;
+const users: SuperUserRecord = {
+    user1: {name: Nett, age: 11, email: 111@mail.ru},
+    user2: {name: Step, age: 111, step111@mail.ru},
+};
+/*typeof: Используйте оператор typeof для определения типа переменной и вывода его в консоль.
+*/
+log.console (typeof user1);
