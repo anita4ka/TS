@@ -93,4 +93,4 @@ const users: SuperUserRecord = {
 };
 /*typeof: Используйте оператор typeof для определения типа переменной и вывода его в консоль.
 */
-log.console (typeof user1);
+console.log (typeof user1);
