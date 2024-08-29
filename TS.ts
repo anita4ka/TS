@@ -46,17 +46,17 @@ const logValue = <T>(value: T): void => {
 Используйте Required<User> для создания нового объекта, который обязательно должен содержать все свойства объекта User.
 */
 
-type SuperUser = {
+type superUser = {
     name: string;
      age: number;
      email: string;
 };
 
-const SuperUserPartial: Partial<SuperUser> = {
+const superUserPartial: Partial<superUser> = {
     name: 'Nett',
 };
 
-const SuperUserRequired: Required<SuperUser> = {
+const superUserRequired: Required<superUser> = {
      name: 'Nett',
      age: 11,
      email: "111@mail.ru",
@@ -65,32 +65,33 @@ const SuperUserRequired: Required<SuperUser> = {
     - Используйте `Pick<User, 'name' | 'age'>` для создания нового объекта, содержащего только свойства `name` и `age` объекта `User`.
     - Используйте `Omit<User, 'email'>` для создания нового объекта, который не содержит свойство `email`.
 */
-const SuperUserPick: Pick<SuperUser, 'name' | 'age'> = {
+const superUserPick: Pick<superUser, 'name' | 'age'> = {
      name: 'Nett',
      age: 11,
 };
-const SuperUserOmit: Omit<SuperUser, 'email'> = {
+const superUserOmit: Omit<superUser, 'email'> = {
      name: 'Nett',
      age: 11,
 }
 /*- Создайте объект `user` типа `User`.
 - Используйте `Readonly<User>` для создания нового объекта, который будет только для чтения. Попробуйте изменить значение одного из свойств этого объекта и посмотрите, что произойдет.
 */
-const SuperUserReadonly: Readonly<SuperUser> = {
+const superUserReadonly: Readonly<superUser> = {
      name: 'Step',
      age: 111,
      email: "step111@mail.ru",
 }
-SuperUserReadonly.email = 'abrakadabra@mail.ru';
+superUserReadonly.email = 'abrakadabra@mail.ru';
 
 
 /*Record: Создайте тип UserRecord как Record<string, User>, в котором ключ - это идентификатор пользователя, а значение - объект User. Используйте этот тип для создания коллекции пользователей.
 */
-type SuperUserRecord = Record<string, SuperUser>;
-const users: SuperUserRecord = {
+type superUserRecord = Record<string, superUser>;
+const users: superUserRecord = {
     user1: {name: 'Nett', age: 11, email: '111@mail.ru'},
     user2: {name: 'Step', age: 111, email: 'step111@mail.ru'},
 };
 /*typeof: Используйте оператор typeof для определения типа переменной и вывода его в консоль.
 */
-console.log (typeof user1);
+
+console.log (typeof users);
