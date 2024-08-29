@@ -9,7 +9,7 @@ type User = {
      status: Status;
 }
 
-const updateStatus (user: User, newStatus: Status): User => {
+const updateStatus = (user: User, newStatus: Status): User => {
     user.status = newStatus;
     return user;
 }
